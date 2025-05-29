@@ -10,6 +10,7 @@ const flipper = function () {
         const isHeads = Math.floor(Math.random()*2);
         coin.src = isHeads ? 'headssvg.svg' : 'tailssvg.svg';
         coin.style.opacity = 1;
+        coin.style.transition='transform 1s';
         coin.style.transform = 'rotateY(0deg)';
         setTimeout(()=>{
          if(isHeads)
