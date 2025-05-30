@@ -21,9 +21,9 @@ const flipper = function () {
             result.textContent="head";
         else
             result.textContent="tail";
+           flag=false;
        },1000);
     }, 1000);
-     flag=false;
 };
 
 flip.addEventListener('click', flipper);
